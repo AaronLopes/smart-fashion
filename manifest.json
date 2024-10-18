@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Climate Impact Shopper",
+  "description": "Discover your clothing's climate footprint",
+  "version": "1.0",
+  "action": {
+    "default_popup": "hello.html",
+    "default_icon": "hello_extensions.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://www.hm.com/*", "https://www2.hm.com/*"]
+    }
+  ]
+}
