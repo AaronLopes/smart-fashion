@@ -1,11 +1,11 @@
 {
   "manifest_version": 3,
-  "name": "Climate Impact Shopper",
+  "name": "Equo",
   "description": "Discover your clothing's climate footprint",
   "version": "1.0",
   "action": {
     "default_popup": "hello.html",
-    "default_icon": "hello_extensions.png"
+    "default_icon": "logo.png"
   },
   "content_scripts": [
     {
