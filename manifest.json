@@ -4,13 +4,19 @@
   "description": "Discover your clothing's climate footprint",
   "version": "1.0",
   "action": {
-    "default_popup": "hello.html",
-    "default_icon": "logo.png"
+    "default_popup": "index.html",
+    "default_icon": "images/logo.png"
   },
   "content_scripts": [
     {
       "js": ["scripts/content.js"],
-      "matches": ["https://www.hm.com/*", "https://www2.hm.com/*"]
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["images/smart-fashion-badge.png"],
+      "matches": ["<all_urls>"]
     }
   ]
 }
